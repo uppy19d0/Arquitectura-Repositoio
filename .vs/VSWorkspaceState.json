@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\aspnetcoremaster",
+    "\\aspnetcoremaster\\aspnetcoremaster.core",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\bin",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\bin\\Debug",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\bin\\Release",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\bin\\Release\\netcoreapp2.0",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\Interface",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\Model",
+    "\\aspnetcoremaster\\aspnetcoremaster.core\\Model\\Base"
+  ],
+  "SelectedNode": "\\aspnetcoremaster\\aspnetcoremaster.sln",
+  "PreviewInSolutionExplorer": false
+}

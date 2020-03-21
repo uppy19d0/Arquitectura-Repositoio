@@ -1,0 +1,58 @@
+﻿@model IEnumerable<aspnetcoremaster.core.Model.InventoryModel>
+
+@{
+    ViewData["Title"] = "ProductList";
+}
+
+<br /><br /><br /><br /><br />
+<a asp-action="Order" class="button primary"> New Order</a>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Last 7 Orders </h3>
+            </div>
+            <br />
+            <div class="box-body">
+                <table id="studentTable" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+
+                            <th> Code </th>
+                            <th> Total </th>
+                            <th> Status </th>
+                            <th> Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.InventoryCode)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    <a href="@Url.Action("DeleteProduct", "Home", new {Id = item.Id})" onclick="return confirm('Are you sure you want to Remove this Note from your class  ?');" class="btn btn-danger btn-sm">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
